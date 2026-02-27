@@ -411,3 +411,142 @@ z-index:10;
 background:#4a6cf7;
 }
 
+
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+   ========================= */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+.navbar{
+padding:12px 5%;
+}
+
+.logo{
+font-size:1.8rem;
+}
+
+/* stack menu if you add hamburger later */
+.nav-links{
+display:none;
+}
+
+/* HERO */
+.hero{
+height:auto;
+padding:60px 15px;
+}
+
+.hero h2{
+font-size:1.8rem;
+}
+
+.hero h3{
+font-size:1.3rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+/* HERO BOX */
+.hero-content{
+width:100%;
+padding:20px;
+}
+
+/* ABOUT */
+.about{
+padding:60px 5%;
+}
+
+.section-title{
+font-size:1.7rem;
+}
+
+/* FEATURES GRID */
+.features{
+grid-template-columns:1fr;
+}
+
+/* ROOMS */
+.rooms{
+padding:60px 5%;
+}
+
+.room-container{
+grid-template-columns:1fr;
+}
+
+/* GALLERY */
+.slider-card{
+height:300px;
+}
+
+/* PRICING */
+.pricing{
+padding:60px 5%;
+}
+
+.price-container{
+grid-template-columns:1fr;
+}
+
+/* LOCATION */
+.location{
+padding:60px 5%;
+}
+
+/* CONTACT */
+.contact{
+padding:40px 15px;
+}
+
+/* BUTTONS */
+.buttons{
+flex-direction:column;
+gap:12px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+/* PHONE NUMBERS */
+.phone-numbers{
+font-size:16px;
+}
+}
+
+
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+@media(max-width:768px){
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:white;
+flex-direction:column;
+width:200px;
+padding:20px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+display:none;
+}
+
+.nav-links.show{
+display:flex;
+}
+}
