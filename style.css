@@ -531,7 +531,14 @@ cursor:pointer;
 
 @media(max-width:768px){
 .menu-toggle{
-display:block;
+   display:block;
+   color:#333;
+   z-index:1101; /* ensure it's above nav and other elements */
+   position:relative;
+   padding:6px 10px;
+   border-radius:6px;
+   background:transparent;
+   -webkit-tap-highlight-color: transparent;
 }
 
 .nav-links{
@@ -550,3 +557,4 @@ display:none;
 display:flex;
 }
 }
+
