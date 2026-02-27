@@ -40,4 +40,9 @@ prevBtn.addEventListener("click", ()=>{
     if(galleryIndex < 0) galleryIndex = galleryImages.length-1;
     showImage(galleryIndex);
 });
+
 showImage(galleryIndex);
+
+document.querySelector(".menu-toggle").onclick = () =>{
+document.querySelector(".nav-links").classList.toggle("show");
+}
