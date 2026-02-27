@@ -533,11 +533,14 @@ cursor:pointer;
 .menu-toggle{
    display:block;
    color:#333;
-   z-index:1101; /* ensure it's above nav and other elements */
-   position:relative;
+   z-index:2200; /* ensure it's above nav and other elements */
+   position:absolute; /* pin to top-right of navbar */
+   right:5%;
+   top:8px;
+   font-size:30px;
    padding:6px 10px;
    border-radius:6px;
-   background:transparent;
+   background:rgba(255,255,255,0.85);
    -webkit-tap-highlight-color: transparent;
 }
 
@@ -557,4 +560,5 @@ display:none;
 display:flex;
 }
 }
+
 
